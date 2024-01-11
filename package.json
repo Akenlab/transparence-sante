@@ -7,6 +7,6 @@
     "typescript": "^5.3.3"
   },
   "scripts": {
-    "build": "rm -Rf build && rollup -c rollup.config.mjs && cp src/manifest.json build/manifest.json && cp -r assets build/icons"
+    "build": "rm -Rf build && rollup -c rollup.config.mjs && cp src/manifest.json build/manifest.json && cp -r assets build/icons && zip -rj build.zip build/*"
   }
 }
